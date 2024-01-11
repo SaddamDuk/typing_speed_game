@@ -1,0 +1,150 @@
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.guessGame {
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 40px;
+}
+
+.titleGame {
+    background-color: white;
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.control {
+    height: 35px;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+.controlButtons input:nth-child(2) {
+    background-color: darkgrey !important;
+}
+
+.keyColors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.key {
+    background-color: white;
+    font-size: larger;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 1s;
+
+}
+
+.key:hover {
+    background-color: #ede7e7;
+}
+
+.key .inPlace {
+    background-color: #f89e13;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.key .notInPlace {
+    background-color: #18ba89;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.tryDiv .inPlace {
+    background-color: #f89e13;
+    border: 0;
+}
+
+.tryDiv .notInPlace {
+    background-color: #18ba89;
+    border: 0;
+}
+
+.tryDiv .wrong {
+    background-color: #27303f;
+    border: 0;
+}
+
+.key .wrong {
+    background-color: #27303f;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.inputContainers {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.controlButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tryDiv {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.tryDiv input {
+    width: 50px;
+    height: 50px;
+    font-size: 46px;
+    text-align: center;
+}
+
+.tryDiv span {
+    font-weight: bold;
+}
+
+.inputsLetter {
+    border-bottom: 5px solid !important;
+    outline: none;
+    border: none;
+}
+
+.disabledInputs {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.messageArea {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+    text-wrap: nowrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center
+}
+
+.messageArea span {
+    color: #18ba89;
+}
