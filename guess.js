@@ -1,7 +1,7 @@
 let gameName = "Guess the World";
 document.title = gameName;
 document.querySelector("h1").innerHTML = gameName;
-let numberOfTries = 6;
+let numberOfTries = 9;
 let numbersOfLetter = 6;
 let currentTry = 1;
 let checkWord = '';
@@ -112,17 +112,20 @@ function hundleGueses() {
 }
 function getHints() {
     if (hintsNumber > 0) {
-        const enabledInputs = document.querySelectorAll("input:not([disabled])")
+        const enabledInputs = document.querySelectorAll(".tryDiv input:not([disabled])")
         const freeLetter = Array.from(enabledInputs).filter((input) => input.value == "")
+        console.log(enabledInputs);
         console.log(freeLetter);
         hintsNumber--;
         hintsControl.value = `${hintsNumber} Hints`;
-        randomInput = freeLetter[Math.floor(Math.random() * freeLetter.length)]
-        console.log(randomInput);
+        randomNumber = Math.floor(Math.random() * freeLetter.length)
+        randomInput = freeLetter[randomNumber]
         randomIndex = Array.from(enabledInputs).indexOf(randomInput)
-
+        console.log(randomInput);
+        console.log(randomIndex);
         if (randomIndex !== -1) {
             randomInput.value = checkWord[randomIndex].toUpperCase()
+            randomInput.disabled = true
         }
     }
     if (hintsNumber == -1) {
