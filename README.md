@@ -1,1 +1,1 @@
-# WORLD_GAME
+# WORD_GAME
