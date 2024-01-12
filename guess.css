@@ -13,6 +13,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     padding-inline: 40px;
+    height: calc(100vh - 156px);
 }
 
 .titleGame {
@@ -25,8 +26,9 @@ h2 {
 .control {
     height: 35px;
     border: none;
-    background-color: aquamarine;
+    background-color: #f89e13;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .controlButtons input:nth-child(2) {
@@ -147,4 +149,20 @@ h2 {
 
 .messageArea span {
     color: #18ba89;
+}
+
+.personCreatedGame {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: large;
+    font-weight: 700;
+    height: 58px;
+    align-items: center;
+    background-color: darkgray;
+    color: #000000ba;
+}
+
+.personCreatedGame span {
+    color: black !important;
 }
