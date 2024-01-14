@@ -118,14 +118,12 @@ function getHints() {
         console.log(freeLetter);
         hintsNumber--;
         hintsControl.value = `${hintsNumber} Hints`;
-        randomNumber = Math.floor(Math.random() * freeLetter.length)
-        randomInput = freeLetter[randomNumber]
+        randomInput = freeLetter[Math.floor(Math.random() * freeLetter.length)]
         randomIndex = Array.from(enabledInputs).indexOf(randomInput)
         console.log(randomInput);
         console.log(randomIndex);
         if (randomIndex !== -1) {
             randomInput.value = checkWord[randomIndex].toUpperCase()
-            randomInput.disabled = true
         }
     }
     if (hintsNumber == -1) {
