@@ -1,52 +1,35 @@
-@media (max-width:850px) {
-    .guessGame {
-        flex-direction: column;
-        overflow: hidden;
-
-        align-items: center;
-        padding: 0;
-        padding-top: 21px;
+@media (max-width:730px) {
+    .titleProject {
+        font-size: 46px;
     }
 
-    .titleGame {
-        margin: 0;
+    .cityName {
+        font-size: 30px;
     }
 
-    .keyColors {
+    .degree {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:350px) {
+    .titleProject {
+        font-size: 35px;
+    }
+
+    .cityName {
+        font-size: 20px;
+    }
+
+    .degree {
+        font-size: 30px;
+    }
+
+    .description {
         font-size: 10px;
-        flex-direction: row;
-    }
-}
-
-@media (max-width:750px) {
-    .tryDiv input {
-        height: 40px;
-        width: 40px;
-    }
-
-    .key .wrong {
-        border-radius: 0;
-    }
-
-    .key .notInPlace {
-        border-radius: 0;
-    }
-
-    .key .inPlace {
-        border-radius: 0;
-    }
-
-    .inputContainers {
-        width: fit-content;
-    }
-}
-
-@media (max-width:450px) {
-    .guessGame {
-        justify-content: space-between;
-    }
-
-    .inputContainers {
-        height: 30vh;
     }
 }

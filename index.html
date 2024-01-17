@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="guess.css">
-    <link rel="stylesheet" href="responsive.css">
     <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-   <h1 class="titleGame"></h1>
-    <div class="guessGame">
-    <div class="inputContainers">
-<div class="controlButtons">
-    <div class="messageArea"></div>
-    <input class="control" type="button" value="Check World">
-    <input class="control hint" type="button" value="Hint">
+   <div class="weatherr">
+    <div class="weather">
+    <div class="titleProject">WEATHER</div>
+   <input placeholder="PLEASE ENTER VALID CITY NAME,PRESS ENTER" type="text">
+   <div class="infoCity">
+<div class="cityName"></div>
+<div class="degree"></div>
+<div class="description"></div>
+<div class="minMax"></div>
+   </div>
 </div>
-    </div>
-
-<!-- Information For Game -->
-    <!--Information 1  -->
-<div class="keyColors">
-<h2>KEY COLORS</h2>
-    <div class="key">
-<div class="inPlace"></div>
-<div>Letter Is Corret and In place</div>
-    </div>
-    <!--Information 2 -->
-    <div class="key">
-<div class="notInPlace"></div>
-<div>Letter Is Corret But Not In place</div>
-    </div>
-    <!--Information 3  -->
-    <div class="key">
-<div class="wrong"></div>
-<div>Letter Is Wrong</div>
-    </div>
-</div>
-</div>
-<div class="personCreatedGame">Guess The Word Game Created By <span>SADDAM DUK</span> </div>    
-<script src="guess.js"></script>
+  </div>  <script src="weather.js"></script>
 </body>
 </html>
