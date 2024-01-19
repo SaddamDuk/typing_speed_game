@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #ffa433eb
+}
+
+.speedGame {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: #EEE;
+
+}
+
+.title {
+    width: 100%;
+    /* text-align: center; */
+    height: 55px;
+    font-size: 30px;
+    /* padding-block: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+.mainGameControler {
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: inherit;
+    align-items: center;
+}
+
+.description>span {
+    color: var(--mainColor);
+}
+
+.startGame {
+    height: 40px;
+    width: inherit;
+    background: var(--mainColor);
+    border: navajowhite;
+    font-family: inherit;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.writeWord {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.writeWord:focus {
+    border: 2px solid var(--mainColor) !important;
+}
+
+.mainGameControler>div,
+input {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+
+}
+
+.messageStyle {
+    font-size: 22px;
+    background: burlywood;
+    border-radius: 5px;
+}
+
+.secondAndScore {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .randomWordStyle {
+    font-size: 20px;
+    background: var(--mainColor);
+    border-radius: 5px;
+} */
+
+.randomWord {
+    font-size: 40px;
+    height: fit-content;
+}
+
+.words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    height: fit-content !important;
+}
+
+.words>div {
+    height: 30px;
+    /* width: max-content; */
+    background: var(--mainColor);
+    border-radius: 2px;
+    padding-inline: 5px;
+}
